@@ -64,6 +64,14 @@
         <Setter Property="Shadow" Value="{StaticResource shadow}" />
         <Setter Property="Margin" Value="0,-90,0,-200" /> <!-- Ajusta este valor según sea necesario -->
     </Style>
+    
+    <Style Class="BalanceRectangleUsuario" TargetType="RoundRectangle">
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="Fill" Value="{StaticResource White}" />
+        <Setter Property="StrokeThickness" Value="2" />
+        <Setter Property="Shadow" Value="{StaticResource shadow}" />
+        <Setter Property="Margin" Value="0,-90,0,-200" /> <!-- Ajusta este valor según sea necesario -->
+    </Style>
 
     <Style
         ApplyToDerivedTypes="True"
@@ -94,11 +102,11 @@
     <Style Class="StrongTitle" TargetType="Label">
         <Setter Property="FontFamily" Value="Strong" />
         <Setter Property="FontSize" Value="Large" />
-        <Setter Property="TextColor" Value="{StaticResource White}" />
+        <Setter Property="TextColor" Value="{StaticResource Black}" />
     </Style>
     <Style Class="StrongMediumTitle" TargetType="Label">
         <Setter Property="FontFamily" Value="Strong" />
-        <Setter Property="FontSize" Value="Small" />
+        <Setter Property="FontSize" Value="Medium" />
         <Setter Property="TextColor" Value="{StaticResource Black}" />
     </Style>
 

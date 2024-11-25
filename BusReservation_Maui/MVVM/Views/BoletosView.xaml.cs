@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace BusReservation_Maui.MVVM.Views;
 
-public partial class Reservas : ContentPage
+public partial class BoletosView : ContentPage
 {
-    public Reservas()
+    public BoletosView()
     {
         InitializeComponent();
     }

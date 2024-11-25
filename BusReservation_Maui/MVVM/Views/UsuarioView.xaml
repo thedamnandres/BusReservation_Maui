@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BusReservation_Maui.MVVM.Views.UsuarioView">
+    <Grid RowDefinitions=".15*, .15*, .15*, .55*">
+        <!-- Rectángulo superior -->
+        <RoundRectangle Grid.RowSpan="2" StyleClass="TopRectangle" />
+        
+        <!-- Cabecera -->
+        <VerticalStackLayout StyleClass="Header" />
+
+        <!-- Grilla para mostrar datos -->
+        <Grid Grid.Row="1"
+              Grid.RowSpan="2"
+              StyleClass="BalanceGrid">
+            <RoundRectangle StyleClass="BalanceRectangleUsuario" />
+            
+            <CollectionView ItemsSource="{Binding Usuarios}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid ColumnDefinitions="*,*" RowDefinitions="*,*,*,*,*">
+                            <!-- Etiqueta: ID -->
+                            <Label StyleClass="StrongTitle" Text="ID" Margin="10"/>
+                            <Label Grid.Column="1" Text="{Binding UsuarioId}" TextColor="Black" Margin="10"/>
+                            
+                            <!-- Etiqueta: Nombre -->
+                            <Label Grid.Row="1" StyleClass="StrongTitle" Text="Nombre" Margin="10"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Nombre}" TextColor="Black" Margin="10"/>
+                            
+                            <!-- Etiqueta: Email -->
+                            <Label Grid.Row="2" StyleClass="StrongTitle" Text="Email" Margin="10"/>
+                            <Label Grid.Row="2" Grid.Column="1" Text="{Binding Email}" TextColor="Black" Margin="10"/>
+                            
+                            <!-- Etiqueta: Teléfono -->
+                            <Label Grid.Row="3" StyleClass="StrongTitle" Text="Teléfono" Margin="10"/>
+                            <Label Grid.Row="3" Grid.Column="1" Text="{Binding Telefono}" TextColor="Black" Margin="10"/>
+                            
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </Grid>
+</ContentPage>

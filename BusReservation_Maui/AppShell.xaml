@@ -3,7 +3,6 @@
     x:Class="BusReservation_Maui.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:BusReservation_Maui"
     xmlns:views="clr-namespace:BusReservation_Maui.MVVM.Views"
     Title="BusReservation_Maui">
 
@@ -11,31 +10,31 @@
         <Tab Title="Home">
             <ShellContent
                 Title="Home"
-                ContentTemplate="{DataTemplate views:Principal}"
+                ContentTemplate="{DataTemplate views:PrincipalView}"
                 Route="Principal"/>
         </Tab>
         <Tab Title="Rutas">
             <ShellContent
                 Title="Rutas"
-                ContentTemplate="{DataTemplate views:Rutas}"
+                ContentTemplate="{DataTemplate views:RutasView}"
                 Route="Rutas"/>
         </Tab>
         <Tab Title="Boletos">
             <ShellContent
                 Title="Boletos"
-                ContentTemplate="{DataTemplate views:Boletos}"
+                ContentTemplate="{DataTemplate views:BoletosView}"
                 Route="Boletos"/>
         </Tab>
         <Tab Title="Reservas">
             <ShellContent
                 Title="Reservas"
-                ContentTemplate="{DataTemplate views:Reservas}"
+                ContentTemplate="{DataTemplate views:RutasView}"
                 Route="Reservas"/>
         </Tab>
         <Tab Title="Usuario">
             <ShellContent
                 Title="Usuario"
-                ContentTemplate="{DataTemplate views:Usuario}"
+                ContentTemplate="{DataTemplate views:UsuarioView}"
                 Route="Usuario"/>
         </Tab>
     </TabBar>
